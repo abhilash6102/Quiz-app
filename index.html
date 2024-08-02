@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="quiz.png" alt="" />
+      <div class="countdown">
+        <div class="time">
+          <p>Time left&nbsp;:</p>
+          <p class="timer">15:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-container">
+      <div class="wrapper">
+        <p>HTML and CSS QUIZ</p>
+        <div class="instructions">
+          <p>Questions:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20</p>
+          <p>
+            Marks:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40
+          </p>
+          <p>
+            Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15
+            mins
+          </p>
+        </div>
+        <button class="btn">Take Test</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="question">
+          <p>Question</p>
+          <div class="number"></div>
+          <p>of</p>
+          <p class="total"></p>
+        </div>
+        <div class="box">
+          <div class="question-box">
+            <div class="ques-wrapper"></div>
+          </div>
+          <div class="answer">
+            <div class="heading">
+              Choose the correct answer from the following options:
+            </div>
+            <div class="choose">
+              <input type="radio" name="options" id="a" class="ans" />
+              <label for="a" id="A_value"></label><br /><br />
+              <input type="radio" name="options" id="b" class="ans" />
+              <label for="b" id="B_value"></label><br /><br />
+              <input type="radio" name="options" id="c" class="ans" />
+              <label for="c" id="C_value"></label><br /><br />
+              <input type="radio" name="options" id="d" class="ans" />
+              <label for="d" id="D_value"></label><br />
+            </div>
+            <div class="clear">
+              <img src="delete.png" alt="" />
+              <p>Clear Responce</p>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="prev">Previous</button>
+          <button class="next">Next</button>
+          <button class="submit">Submit</button>
+        </div>
+      </div>
+      <div class="pop-box">
+        <div class="pop">
+          <div class="popup">
+            <h2>Do you want to submit?</h2>
+            <div class="btns">
+              <button id="yesBtn">Yes</button>
+              <button id="noBtn">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="score-popup">
+      <div class="score-popup">
+        <img src="check-green.gif" alt="" />
+        <h2>Your Score</h2>
+        <div class="scorecard">
+          <p id="score">0</p>
+          <p>/</p>
+          <p id="total">20</p>
+        </div>
+        <button id="play-again-button">Play Again</button>
+        <button id="close-popup-button">Quit</button>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
